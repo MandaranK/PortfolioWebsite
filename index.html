@@ -2,141 +2,159 @@
 <html>
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Mandaran's Website</title>
+    <title>Mandaran's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <section class="header">
-    <nav>
-        <a href="index.html"><img src="images/logo.png"></a>
-        <div class="nav-links">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">SOFTWARE</a></li>
-                <li><a href="">HARDWARE</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
+    <div id="home">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#software">SOFTWARE</a></li>
+                    <li><a href="#hardware">HARDWARE</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome! I'm Mandaran Krishnakumar<br><br></h1>
+            <p><br><br>I am a first year Electrical Engineering student at the University of Waterloo.<br><br>I've always had a keen interest in designing and programming both electrical and software systems!<br><br>I have gained these experiences through my work history, projects, and the courses I've taken. <br><br><br><br>Below, you can view my portfolio of software and hardware projects I have done over the years.</p>
         </div>
-    </nav>
-
-<div class="text-box">
-    <h1>Mandaran Krishnakumar</h1>
-    <p><br>Welcome! I'm currently in my first year of Electrical Engineering at the University of Waterloo.<br><br>I've always had a keen interest in designing and programming both electrical and software systems!<br><br>I have gained these experiences through my work history, projects, and the courses I've taken.<br><br><br><br><br>Below, you can view my portfolio of software and hardware projects I have done over the years.</p>
-    <a href="" class="hero-btn">My Resume</a>
-    
-</div>
-
+        <img src="images/portrait.png" class="portrait">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="images/space.mp4" type="video/mp4">
+        </video>
+    </div>
 </section>
     
 <!------ Software ------->
 
 <section class="software">
-    <h1>Software Projects</h1>
-    <p1><br>I have worked with numerous programming languages for both Front-End and Back-End Development! <br>Front-End: JavaScript, HTML, CSS <br>Back-End: Python, Java, C++, C#, C <br><br>In addition to these programming languages, I have used different Developer Tools and IDEs like <br>VScode, Pycharm, Eclipse, Brackets, Code::Blocks, NetBeans, STM32CubeIDE, Arduino IDE, and CLion.<br><br><br><br></p1>
-    
-    <div class="row">
-        <div class="software-col">
-            <h3>Android Weather App<br>Java</h3>
-            <img src="images/weather.png">
-            <p>*****Project 1 text here*****</p>
+    <div id="software">
+        <h1><br>Software Projects</h1>
+        <p1><br>I have worked with numerous programming languages for both Front-End and Back-End Development! <br>Front-End: JavaScript, HTML, CSS <br>Back-End: Python, Java, C++, C#, C <br><br>In addition to these programming languages, I have used different Developer Tools and IDEs like <br>VScode, Pycharm, Eclipse, Brackets, Code::Blocks, NetBeans, STM32CubeIDE, Arduino IDE, and CLion.<br><br><br><br><br></p1>
+        
+        <div class="row">
+            <div class="software-col">
+                <h3>Android Weather App</h3>
+                <h4>Java</h4>
+                <img src="images/weather.png">
+                <p>This app displays the current weather, hourly temperatures, and windspeed of any city across the world with the use of global Weather API. JSON Object Request from the Volley libary was used in Android Studio to retrieve the API data. The UI was designed to be aesthetically pleasing.</p>
+            </div>
+            <div class="software-col">
+                <h3>Personal Portfolio Website</h3>
+                <h4>HTML/CSS</h4>
+                <img src="images/website.png">
+                <p>This website was designed to optimize the user experience and simplify navigation. Interactive elements such as hovering animations and embedded hyperlinks for user convenience. Good formatting is maintained with the use of center, absolute, and relative positioning.</p>
+            </div>
+            <div class="software-col">
+                <h3>"Classic Pong" Game</h3>
+                <h4>C#</h4>
+                <img src="images/pong.png">
+                <p>Using the Unity game engine, simple AI is implemented as the user plays against a CPU. The game does become progressively harder for the player. Different components of the UI were programmed with the UnityEngine namespace.</p>
+            </div>
         </div>
-        <div class="software-col">
-            <h3>Personal Portfolio Website<br>HTML/CSS</h3>
-            <img src="images/website.png">
-            <p>*****Project 2 text here*****</p>
+        <div class="row">
+            <div class="software-col">
+                <h3>To-do List Android App</h3>
+                <h4>Java</h4>
+                <img src="images/todo.png">
+                <p>Programmed in Android Studio, the UI component is implemented (in a layout resource file) for a user-friendly experience. AppCompatActivity was used so older devices can access these app features. Methods were included to add or remove items from the list array.</p>
+            </div>
+            <div class="software-col">
+                <h3>Music Player</h3>
+                <h4>JavaScript/HTML/CSS</h4>
+                <img src="images/music.png">
+                <p>The layout was constructed to be easy and simple to use, from HTML and CSS. Programmed with JavaScript, this music player is able to display a progress bar, which can be controlled by the user, as well as the ability to pause and replay. Webkit was used to avoid browser compatibility issues.</p>
+            </div>
+            <div class="software-col">
+                <h3>"Classic Snake" Game</h3>
+                <h4>Java</h4>
+                <img src="images/snake.png">
+                <p>This game has three classes that use JFrame, JPanel, and the ActionListener interface. Methods were implemented to generate a new location for the apple, check for a collision, determine if the game is over, etc. To move the snake, a loop was used to iterate through the body parts of the snake.</p>
+            </div>
         </div>
-        <div class="software-col">
-            <h3>"Classic Pong" Game<br>C#</h3>
-            <img src="images/pong.png">
-            <p>*****Project 3 text here*****</p>
+        <div class="row">
+            <div class="software-col">
+                <h3>"Minesweeper" Game</h3>
+                <h4>C++</h4>
+                <img src="images/minesweeper.png">
+                <p>Different functions were implemented into the setup of this game, such as create the board with specified dimensions, hide the board values, reveal values and neighbours on the board when clicked on, and clean the board when the game is done.</p>
+            </div>
+            <div class="software-col">
+                <h3>Hockey Goalie Game</h3>
+                <h4>Python</h4>
+                <img src="images/goalie.png">
+                <p>This game was programmed using the Pygame library. The objective of this game is to save as many pucks from going into the net. As the user controls the goalie, pucks will randomly spawn every 5 seconds.</p>
+            </div>
+            <div class="software-col">
+                <h3>"Agar.io" Game</h3>
+                <h4>Python</h4>
+                <img src="images/agario.png">
+                <p>This game was programmed using the Pygame library. The player starts controlling a circle, as other different circles will spawn randomly on the screen. The objective is to consume these circles to increase in size.</p>
+            </div>
+            
         </div>
     </div>
-    <div class="row">
-        <div class="software-col">
-            <h3>To-do List Android App<br>Java</h3>
-            <img src="images/todo.png">
-            <p>*****Project 1 text here*****</p>
-        </div>
-        <div class="software-col">
-            <h3>"Snake" Game<br>Java</h3>
-            <img src="images/snake.png">
-            <p>*****Project 2 text here*****</p>
-        </div>
-        <div class="software-col">
-            <h3>Hockey Goalie Game<br>Python</h3>
-            <img src="images/goalie.png">
-            <p>*****Project 3 text here*****</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="software-col">
-            <h3>"Minesweeper" Game<br>C++</h3>
-            <img src="images/minesweeper.png">
-            <p>*****Project 1 text here*****</p>
-        </div>
-        <div class="software-col">
-            <h3>"Agar.io" Game<br>Python</h3>
-            <img src="images/agario.png">
-            <p>*****Project 2 text here*****</p>
-        </div>
-        <div class="software-col">
-            <h3>Bit Encryptor/Decryptor<br>Java</h3>
-            <img src="images/bit.png">
-            <p>*****Project 3 text here*****</p>
-        </div>
-    </div>
-    
 </section>
 
 <!------ Hardware ------->
 
 <section class="hardware">
-    <h2>Hardware Projects</h2>
-    <p1><br>I also have a lot of experience in the field of hardware, like circuiting and programming Arduinos and other Microcontrollers. <br><br>Additionally, I have worked with multiple hardware-based softwares such as, <br>TinkerCAD and Altium for Circuit Design, AutoCAD and SolidWorks for 3D Printing, and Google Sketchup and AutoCAD for Architectural Design. <br><br>*Hover over these images to learn more about these projects!*<br><br><br></p1>
-    
-    <div class="row">
-        <div class="hardware-col">
-            <img src="images/uv.png">
-            <div class="layer">
-                <h3>UV Radiation Detection System<br><br><br><br><br><br><br><br></h3>
+    <div id="hardware">
+        <h2><br>Hardware Projects</h2>
+        <p2><br>I also have a lot of experience in the field of hardware like soldering, circuiting, and programming Arduinos and other Microcontrollers. <br><br>Additionally, I have worked with multiple hardware-based softwares such as, <br>TinkerCAD and Altium for Circuit Design, AutoCAD and SolidWorks for 3D Printing, and Google Sketchup and AutoCAD for Architectural Design. <br><br>*Hover over these images to learn more about these projects!*<br><br><br><br><br><br></p2>
+        
+        <div class="row">
+            <div class="hardware-col">
+                <img src="images/uv.png">
+                <div class="layer">
+                    <h3>UV Radiation Detection System<br><br><br><br><br><br><br><br></h3>
+                    <p>This device is designed to take sun radiation as input through the light sensor. 
+                        <br>It is programmed to convert it into a UV index value (from 0-12) which will be displayed and updated on a LCD monitor, along informing the user how much skin protection is needed outside. 
+                        <br>The STM32 Microcontroller was programmed in C, using the STM32Cube IDE. The outer structure was designed in AutoCAD and later 3D printed.</p>
+                </div>
             </div>
-        </div>
-        <div class="hardware-col">
-            <img src="images/rover.png">
-            <div class="layer">
-                <h3>Line-Following Automated Rover<br><br><br><br><br><br><br><br></h3>
-                <p>This rover is programmed and constructed to travel along a path from one location to another, and back. 
-                    <br>If the rover drives out of the pathway, it is programmed to relocate the pathway automatically. 
-                    <br>A majority of the structure is 3D printed, along with Analog Line Sensors, DC Motors, and an Arduino. 
-                    <br>The line sensors and motors on the wheels are programmed for automation through the Arduino, using C++ in the Arduino IDE.</p>
+            <div class="hardware-col">
+                <img src="images/rover.png">
+                <div class="layer">
+                    <h3>Line-Following Automated Rover<br><br><br><br><br><br><br><br></h3>
+                    <p>This rover is designed and programmed to travel along a path from one location to another. 
+                        <br>If the rover drives out of the pathway, it is able to relocate the pathway automatically. 
+                        <br>A majority of the structure is 3D printed, along with Analog Line Sensors, DC Motors, and an Arduino. 
+                        <br>The line sensors and motors on the wheels are programmed for automation through the Arduino, using C in the Arduino IDE.</p>
+                </div>
             </div>
-        </div>
-        <div class="hardware-col">
-            <img src="images/truck.png">
-            <div class="layer">
-                <h3>Autonomous Truck <br>Circuit Simulation<br><br><br><br><br><br><br></h3>
-                <p>This truck simulation was designed and programmed on Autodesk TinkerCAD. 
-                    <br>Includes a built-in backing-up alarm system, which has flashing lights and sounds. 
-                    <br>The circuit consists of multiple Arduinos (programmed in C), DC Motors, an LED, and a Piezo.<br><br><br></p>
+            <div class="hardware-col">
+                <img src="images/truck.png">
+                <div class="layer">
+                    <h3>Autonomous Truck <br>Circuit Simulation<br><br><br><br><br><br><br></h3>
+                    <p>This truck simulation was designed and programmed on Autodesk TinkerCAD. 
+                        <br><br>Includes a built-in backing-up alarm system, which has flashing lights and sounds. 
+                        <br><br>The circuit consists of multiple Arduinos (programmed in C), DC Motors, an LED, and a Piezo.</p>
+                </div>
             </div>
         </div>
     </div>
-  
 </section>
 
 <!------ Contact ------->
     
 <section class="contact">
-    <h1>Click the icons to view my LinkedIn and GitHub Profiles!</h1>
-    <nav1>
-        <a href="https://www.linkedin.com/in/mandaran-krishnakumar-081977248/"><img src="images/linkedin.png"></a>
-    </nav1>
-    <nav2>
-        <a href="https://github.com/MandaranK?tab=repositories"><img src="images/github.png"></a>
-    </nav2>
+    <div id="contact">
+        <h1>Click the icons to view my LinkedIn and GitHub Profiles!<br><br></h1>
+        <nav1>
+            <a href="https://www.linkedin.com/in/mandaran-krishnakumar-081977248/"><img src="images/linkedin.png"></a>
+        </nav1>
+        <nav2>
+            <a href="https://github.com/MandaranK?tab=repositories"><img src="images/github.png"></a>
+        </nav2>
+    </div>
 </section>
     
     
